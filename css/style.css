@@ -18,12 +18,14 @@
 }
 .main-navigation {
     display: flex;
+    justify-content: center;
     min-height: 65px;
     margin-bottom: 34px;
     margin-left: 140px;
 }
 .main-navigation .container {
     display: flex;
+    flex-wrap: wrap;
 }
 .main-navigation-site {
     display: flex;
@@ -42,7 +44,6 @@
 }
 .main-logo {
     display: block;
-    width: 160px;
     height: 65px;
 }
 .main-logo:hover {
@@ -268,6 +269,7 @@ main {
 }
 .footer-wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     padding-top: 69px;
     padding-bottom: 65px;
