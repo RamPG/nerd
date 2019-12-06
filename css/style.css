@@ -18,19 +18,17 @@
 }
 .main-navigation {
     display: flex;
-    justify-content: space-between;
     min-height: 65px;
     margin-bottom: 34px;
     margin-left: 140px;
 }
 .main-navigation .container {
     display: flex;
-    justify-content: space-between;
 }
 .main-navigation-site {
     display: flex;
     flex-wrap: wrap;
-    margin: 0 245px 0 0;
+    margin: 0 245px 0 202px;
     padding: 25px 20px 0;
 }
 .user-cart {
@@ -40,7 +38,7 @@
     text-align: right;
 }
 .main-navigation-site li {
-    padding: 0 23px;
+    padding-right: 47px;
 }
 .main-logo {
     display: block;
@@ -127,7 +125,7 @@ main {
 .list-development {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0;
     padding: 0;
     padding-top: 80px;
@@ -200,7 +198,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     padding-top: 50px;
-    justify-content: space-between;
+    justify-content: center;
     padding-bottom: 50px;
     border-bottom: 2px solid #eee;
 }
@@ -244,7 +242,7 @@ main {
 .clients {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0;
     padding-left: 0;
     list-style: none;
@@ -270,7 +268,7 @@ main {
 }
 .footer-wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding-top: 69px;
     padding-bottom: 65px;
 }
