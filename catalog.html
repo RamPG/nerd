@@ -2,9 +2,183 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <title>Каталог Nerds</title>
 </head>
-<body>
-$END$
+<body class="page">
+<header class="main-header">
+    <div class="content-wrapper">
+        <nav class="main-navigation">
+            <a class="main-logo" href="index.html">
+                <img src="img/nerds-logo.svg" width="160" height="65" alt="main logo">
+            </a>
+            <ul class="main-navigation-site">
+                <li>
+                    <a href="studio.html">Студия</a>
+                </li>
+                <li>
+                    <a href="clients.html">Клиенты</a>
+                </li>
+                <li>
+                    <a href="shop.html">Магазин</a>
+                </li>
+                <li>
+                    <a href="contackts.html">Контакты</a>
+                </li>
+            </ul>
+            <ul class="user-cart">
+                <li>
+                    <a href="cart.html">Корзина</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <h1>Магазин готовых шаблонов</h1>
+</header>
+<main>
+    <div class="catalog-columns">
+        <section class="filters">
+            <h2 class="visually-hidden">Фильтр товаров</h2>
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                <fieldset>
+                    <legend>Сетка:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                                   name="product-group"
+                                   id="adaptive" checked>
+                            <label for="adaptive">Адаптивная</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                                   name="product-group"
+                                   id="fixed">
+                            <label for="adaptive">Фиксированная</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                                   name="product-group"
+                                   id="rubber">
+                            <label for="adaptive">Резиновая</label>
+                        </li>
+
+                    </ul>
+                </fieldset>
+                <fieldset>
+                    <legend>Группы товаров:</legend>
+                    <ul>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                   name="slider" id="filter-slider">
+                            <label for="filter-slider">Слайдер</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                   name="product-group" id="filter-benefits"
+                                   checked>
+                            <label for="filter-benefits">Блок преимуществ</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                   name="news" id="filter-news">
+                            <label for="filter-news">Новости</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                   name="gallery" id="filter-gallery">
+                            <label for="filter-gallery">Галерея</label>
+                        </li>
+                        <li class="filter-option">
+                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                   name="basket" id="filter-basket">
+                            <label for="filter-basket">Корзина</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <button type="submit" class="filter-button button">Показать</button>
+            </form>
+        </section>
+        <section class="catalog">
+            <ul class="catalog-list">
+                <li class="catalog-item">
+                    <a href="catalog-item.html">
+                        <p class="catalog-item-image">
+                            <img src="img/first-product.jpg" width="360" height="576" alt="Sedona">
+                        </p>
+                    </a>
+                </li>
+                <li class="catalog-item">
+                    <a href="catalog-item.html">
+                        <p class="catalog-item-image">
+                            <img src="img/second-product.jpg" width="360" height="576" alt="Pink">
+                        </p>
+                    </a>
+                </li>
+                <li class="catalog-item">
+                    <a href="catalog-item.html">
+                        <p class="catalog-item-image">
+                            <img src="img/third-product.jpg" width="360" height="576" alt="Borodinski">
+                        </p>
+                    </a>
+                </li>
+                <li class="catalog-item">
+                    <a href="catalog-item.html">
+                        <p class="catalog-item-image">
+                            <img src="img/fourth-product.jpg" width="360" height="576" alt="Mishka">
+                        </p>
+                    </a>
+                </li>
+                <li class="catalog-item">
+                    <a href="catalog-item.html">
+                        <p class="catalog-item-image">
+                            <img src="img/fifth-product.jpg" width="360" height="576" alt="Education">
+                        </p>
+                    </a>
+                </li>
+                <li class="catalog-item">
+                    <a href="catalog-item.html">
+                        <p class="catalog-item-image">
+                            <img src="img/sixth-product.jpg" width="360" height="576" alt="Kvas">
+                        </p>
+                    </a>
+                </li>
+            </ul>
+            <ul class="pagination-list">
+                <li class="pagination-item">
+                    <a class="button" href="#">1</a>
+                </li>
+                <li class="pagination-item pagination-item-current">
+                    <a class="button">2</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="button" href="#">3</a>
+                </li>
+                <li class="pagination-item">
+                    <a class="button" href="#">4</a>
+                </li>
+            </ul>
+        </section>
+</main>
+<footer>
+    <div class="content-wrapper">
+        <div class="main-footer">
+            <ul class="social-links">
+                <li>VK</li>
+                <li>Facebook</li>
+                <li>Inst</li>
+            </ul>
+            <div class="offer">
+                <h1>
+                    Давайте дружить, это выгодно!
+                </h1>
+                <p>
+                    Скидка 10% для друзей из социальных сетей.
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

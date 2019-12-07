@@ -12,7 +12,14 @@
     padding-top: 49px;
     background-color: #eeeeee;
 }
-
+.main-header h1{
+    text-align: center;
+    padding-bottom: 116px;
+    color: #000000;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
+}
 .content-wrapper {
     width: 1160px;
     margin-left: auto;
@@ -105,15 +112,15 @@
 }
 
 .slider .button {
+    background-color: #fb565a;
+    color: #ffffff;
     margin-top: 26px;
     padding: 16px 54px;
 }
 
 .button {
     display: inline-block;
-    background-color: #fb565a;
     text-decoration: none;
-    color: #ffffff;
     font-size: 16px;
     font-weight: 500;
     line-height: 18px;
@@ -160,6 +167,7 @@ main {
 
 .list-development .button {
     text-align: center;
+    color: #ffffff;
 }
 
 .list-development li:nth-child(1) .button {
@@ -377,4 +385,12 @@ main {
     margin-top: 4px;
     margin-bottom: 11px;
     line-height: 22px;
+}
+.catalog-columns .button,
+.catalog .pagination-list .button {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+    color: #000000;
+    background-color: #eeeeee;
 }
