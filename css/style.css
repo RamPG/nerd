@@ -13,14 +13,6 @@
     background-color: #eeeeee;
 }
 
-.main-header h1 {
-    text-align: center;
-    padding-bottom: 116px;
-    color: #000000;
-    font-size: 55px;
-    font-weight: 500;
-    line-height: 55px;
-}
 
 .content-wrapper {
     width: 1160px;
@@ -397,6 +389,14 @@ main {
     justify-content: space-between;
     padding-top: 55px;
     padding-bottom: 55px;
+}
+.header-catalog {
+    text-align: center;
+    padding-bottom: 116px;
+    color: #000000;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 55px;
 }
 .grid-field {
     padding: 0;
