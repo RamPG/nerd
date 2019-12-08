@@ -38,128 +38,132 @@
     <h1>Магазин готовых шаблонов</h1>
 </header>
 <main>
-    <div class="catalog-columns">
-        <section class="filters">
-            <h2 class="visually-hidden">Фильтр товаров</h2>
-            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                <fieldset>
-                    <legend>Сетка:</legend>
-                    <ul>
-                        <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-radio" type="radio"
-                                   name="product-group"
-                                   id="adaptive" checked>
-                            <label for="adaptive">Адаптивная</label>
-                        </li>
-                        <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-radio" type="radio"
-                                   name="product-group"
-                                   id="fixed">
-                            <label for="adaptive">Фиксированная</label>
-                        </li>
-                        <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-radio" type="radio"
-                                   name="product-group"
-                                   id="rubber">
-                            <label for="adaptive">Резиновая</label>
-                        </li>
+    <div class="content-wrapper">
+        <div class="main-catalog-wrapper">
+            <section class="filters">
+                <h2 class="visually-hidden">Фильтр товаров</h2>
+                <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+                    <fieldset class="grid-field">
+                        <legend>Сетка:</legend>
+                        <ul class="grid-field-list">
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                                       name="product-group"
+                                       id="adaptive">
+                                <label for="adaptive">Адаптивная</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                                       name="product-group"
+                                       id="fixed">
+                                <label for="adaptive">Фиксированная</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio"
+                                       name="product-group"
+                                       id="rubber">
+                                <label for="adaptive">Резиновая</label>
+                            </li>
 
-                    </ul>
-                </fieldset>
-                <fieldset>
-                    <legend>Группы товаров:</legend>
-                    <ul>
-                        <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
-                                   name="slider" id="filter-slider">
-                            <label for="filter-slider">Слайдер</label>
-                        </li>
-                        <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
-                                   name="product-group" id="filter-benefits"
-                                   checked>
-                            <label for="filter-benefits">Блок преимуществ</label>
-                        </li>
-                        <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
-                                   name="news" id="filter-news">
-                            <label for="filter-news">Новости</label>
-                        </li>
-                        <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
-                                   name="gallery" id="filter-gallery">
-                            <label for="filter-gallery">Галерея</label>
-                        </li>
-                        <li class="filter-option">
-                            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
-                                   name="basket" id="filter-basket">
-                            <label for="filter-basket">Корзина</label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <button type="submit" class="filter-button button">Показать</button>
-            </form>
-        </section>
-        <section class="catalog">
-            <ul class="catalog-list">
-                <li class="catalog-item">
-                    <a href="catalog-item.html">
-                        <p class="catalog-item-image">
-                            <img src="img/first-product.jpg" width="360" height="576" alt="Sedona">
-                        </p>
-                    </a>
-                </li>
-                <li class="catalog-item">
-                    <a href="catalog-item.html">
-                        <p class="catalog-item-image">
-                            <img src="img/second-product.jpg" width="360" height="576" alt="Pink">
-                        </p>
-                    </a>
-                </li>
-                <li class="catalog-item">
-                    <a href="catalog-item.html">
-                        <p class="catalog-item-image">
-                            <img src="img/third-product.jpg" width="360" height="576" alt="Borodinski">
-                        </p>
-                    </a>
-                </li>
-                <li class="catalog-item">
-                    <a href="catalog-item.html">
-                        <p class="catalog-item-image">
-                            <img src="img/fourth-product.jpg" width="360" height="576" alt="Mishka">
-                        </p>
-                    </a>
-                </li>
-                <li class="catalog-item">
-                    <a href="catalog-item.html">
-                        <p class="catalog-item-image">
-                            <img src="img/fifth-product.jpg" width="360" height="576" alt="Education">
-                        </p>
-                    </a>
-                </li>
-                <li class="catalog-item">
-                    <a href="catalog-item.html">
-                        <p class="catalog-item-image">
-                            <img src="img/sixth-product.jpg" width="360" height="576" alt="Kvas">
-                        </p>
-                    </a>
-                </li>
-            </ul>
-            <ul class="pagination-list">
-                <li class="pagination-item">
-                    <a class="button" href="#">1</a>
-                </li>
-                <li class="pagination-item pagination-item-current">
-                    <a class="button">2</a>
-                </li>
-                <li class="pagination-item">
-                    <a class="button" href="#">3</a>
-                </li>
-                <li class="pagination-item">
-                    <a class="button" href="#">4</a>
-                </li>
-            </ul>
-        </section>
+                        </ul>
+                    </fieldset>
+                    <fieldset class="product-group-field">
+                        <legend>Особенности:</legend>
+                        <ul class="product-group-list">
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                       name="slider" id="filter-slider">
+                                <label for="filter-slider">Слайдер</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                       name="product-group" id="filter-benefits"
+                                       checked>
+                                <label for="filter-benefits">Блок преимуществ</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                       name="news" id="filter-news">
+                                <label for="filter-news">Новости</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                       name="gallery" id="filter-gallery">
+                                <label for="filter-gallery">Галерея</label>
+                            </li>
+                            <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox"
+                                       name="basket" id="filter-basket">
+                                <label for="filter-basket">Корзина</label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                    <button type="submit" class="filter-button button">Показать</button>
+                </form>
+            </section>
+            <section class="catalog">
+                <ul class="catalog-list">
+                    <li class="catalog-item">
+                        <a href="catalog-item.html">
+                            <p class="catalog-item-image">
+                                <img src="img/first-product.jpg" width="360" height="576" alt="Sedona">
+                            </p>
+                        </a>
+                    </li>
+                    <li class="catalog-item">
+                        <a href="catalog-item.html">
+                            <p class="catalog-item-image">
+                                <img src="img/second-product.jpg" width="360" height="576" alt="Pink">
+                            </p>
+                        </a>
+                    </li>
+                    <li class="catalog-item">
+                        <a href="catalog-item.html">
+                            <p class="catalog-item-image">
+                                <img src="img/third-product.jpg" width="360" height="576" alt="Borodinski">
+                            </p>
+                        </a>
+                    </li>
+                    <li class="catalog-item">
+                        <a href="catalog-item.html">
+                            <p class="catalog-item-image">
+                                <img src="img/fourth-product.jpg" width="360" height="576" alt="Mishka">
+                            </p>
+                        </a>
+                    </li>
+                    <li class="catalog-item">
+                        <a href="catalog-item.html">
+                            <p class="catalog-item-image">
+                                <img src="img/fifth-product.jpg" width="360" height="576" alt="Education">
+                            </p>
+                        </a>
+                    </li>
+                    <li class="catalog-item">
+                        <a href="catalog-item.html">
+                            <p class="catalog-item-image">
+                                <img src="img/sixth-product.jpg" width="360" height="576" alt="Kvas">
+                            </p>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="pagination-list">
+                    <li class="pagination-item">
+                        <a class="button" href="#">1</a>
+                    </li>
+                    <li class="pagination-item pagination-item-current">
+                        <a class="button">2</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="button" href="#">3</a>
+                    </li>
+                    <li class="pagination-item">
+                        <a class="button" href="#">СЛЕДУЮЩАЯ</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+
+    </div>
 </main>
 <footer>
     <div class="content-wrapper">

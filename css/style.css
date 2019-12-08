@@ -12,7 +12,8 @@
     padding-top: 49px;
     background-color: #eeeeee;
 }
-.main-header h1{
+
+.main-header h1 {
     text-align: center;
     padding-bottom: 116px;
     color: #000000;
@@ -20,6 +21,7 @@
     font-weight: 500;
     line-height: 55px;
 }
+
 .content-wrapper {
     width: 1160px;
     margin-left: auto;
@@ -222,9 +224,11 @@ main {
     padding-bottom: 50px;
     border-bottom: 2px solid #eee;
 }
+
 .about-us .company {
     width: 660px;
 }
+
 .about-us .company h1 {
     color: #000000;
     font-size: 45px;
@@ -258,9 +262,11 @@ main {
     padding-left: 36px;
     margin-bottom: 24px;
 }
+
 .about-us .statistics {
     width: 360px;
 }
+
 .about-us .statistics table {
     width: 100%;
 }
@@ -386,11 +392,112 @@ main {
     margin-bottom: 11px;
     line-height: 22px;
 }
-.catalog-columns .button,
+.main-catalog-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 55px;
+}
+.grid-field {
+    padding: 0;
+    margin-bottom: 26px;
+}
+.grid-field-list {
+    margin-top: 15px;
+    margin-bottom: 16px;
+    padding-left: 0;
+    list-style: none;
+}
+.product-group-field {
+    padding: 0;
+    margin-bottom: 25px;
+}
+.product-group-list {
+    margin: 0;
+    padding: 0;
+}
+.filters {
+    width: 260px;
+}
+.catalog {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    padding-bottom: 28px;
+}
+.catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+    padding-bottom: 28px;
+}
+.filters .button,
 .catalog .pagination-list .button {
+    border: none;
     font-size: 16px;
     font-weight: 500;
     line-height: 18px;
     color: #000000;
     background-color: #eeeeee;
+}
+
+.filters .button:hover,
+.catalog .pagination-list .button:hover {
+    background-color: #dfdfdf;
+}
+
+.filters .button:active,
+.catalog .pagination-list .button:active {
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.1);
+    background-color: #d5d5d5;
+}
+
+.filters fieldset {
+    border: none;
+}
+
+.filters legend {
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.filter-input + label {
+    padding-left: 37px;
+    color: #283136;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.filter-input:hover + label {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.filter-input:disabled + label {
+    opacity: 0.3;
+    color: #283136;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.pagination-list {
+    display: flex;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+.pagination-list li {
+    margin-right: 12px;
 }
