@@ -78,9 +78,11 @@ body a {
     justify-content: center;
     width: 800px;
 }
+
 .navigation-site .check {
     border-bottom: 2px solid #fb565a;
 }
+
 .navigation-site li {
     margin: 0 23px;
 }
@@ -556,9 +558,11 @@ body a {
     user-select: none;
     cursor: pointer;
 }
+
 .filter-option {
     margin-bottom: 12px;
 }
+
 .filter-input-radio + label:before {
     content: "";
     position: absolute;
@@ -747,8 +751,76 @@ body a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 760px;
     margin: 0;
     padding: 28px 0 28px;
+}
+
+.catalog-list li {
+    padding-top: 40px;
+    position: relative;
+}
+
+.catalog-list li:before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+
+
+    width: 360px;
+    height: 40px;
+
+    background-image: url("../img/browser.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    opacity: 0.12;
+}
+
+.catalog-list li:hover:before,
+.catalog-list li:focus:before {
+    opacity: 1;
+}
+
+.action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 385px;
+
+    width: 360px;
+    height: 231px;
+
+    background-color: #eeeeee;
+}
+
+.action {
+    display: none;
+}
+
+.catalog-list li:hover .action {
+    display: flex;
+}
+
+.action h2 {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.action p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0 0 30px;
+}
+
+.action .button {
+    background-color: #fb565a;
+    padding: 19px 62px;
 }
 
 .pagination-list {
