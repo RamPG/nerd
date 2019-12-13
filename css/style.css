@@ -175,29 +175,33 @@ body a {
 }
 
 .slider-controls label {
-    content: "";
-
-    display: inline-block;
-    margin-right: 12px;
     position: relative;
-
-    border-radius: 50%;
+    display: block;
+    margin: 0 9px;
     width: 18px;
     height: 18px;
+    border: 0;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer
 
 }
 
 .slider-controls label::after {
     content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%
+}
 
-    display: inline-block;
-    position: relative;
-
-    border-radius: 50%;
-    width: 18px;
-    height: 18px;
-    background-color: #ffffff;
-
+#btn-1:checked ~ .slider-controls label[for="btn-1"]::after,
+#btn-2:checked ~ .slider-controls label[for="btn-2"]::after,
+#btn-3:checked ~ .slider-controls label[for="btn-3"]::after {
+    border: 2px solid #c1c1c1;
 }
 
 .slide-item:nth-child(1) {
@@ -216,14 +220,6 @@ body a {
     background-image: url("../img/slide-3.png");
     background-repeat: no-repeat;
     background-position: 100% 10px;
-}
-
-.slider-controls label:hover,
-#btn-1:checked ~ .slider-controls label:nth-child(1),
-#btn-2:checked ~ .slider-controls label:nth-child(2),
-#btn-3:checked ~ .slider-controls label:nth-child(3) {
-    border: 2px solid #c1c1c1;
-    border-radius: 50%;
 }
 
 #btn-1:checked ~ .slide-list .slide-item:nth-child(1) {
