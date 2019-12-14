@@ -20,6 +20,11 @@ body a {
     color: inherit;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     width: 1160px;
     margin-left: auto;
@@ -78,9 +83,11 @@ body a {
     padding: 25px 20px 0;
     justify-content: center;
     width: 800px;
+    min-height: 65px;
 }
 
-.navigation-site .check {
+.navigation-site-item-current a {
+    padding-bottom: 12px;
     border-bottom: 2px solid #fb565a;
 }
 
@@ -93,6 +100,7 @@ body a {
     margin: 0;
     padding-top: 25px;
     width: 115px;
+    min-height: 65px;
 
     text-align: right;
 }
@@ -126,6 +134,12 @@ body a {
     padding: 0;
 }
 
+.slide-wrapper {
+    width: 515px;
+    min-height: 320px;
+    margin-bottom: 80px;
+}
+
 .slide-item {
     margin-top: 37px;
     display: none;
@@ -133,7 +147,6 @@ body a {
 
 .slide-item h1 {
     margin-top: 50px;
-    width: 515px;
     margin-bottom: 27px;
 
     color: #000000;
@@ -150,7 +163,6 @@ body a {
     width: 240px;
     text-align: center;
     margin-top: 42px;
-    margin-bottom: 80px;
     padding: 13px 0;
     background-color: #fb565a;
 }
@@ -244,6 +256,11 @@ body a {
     margin: 0 0 20px;
 }
 
+.list-development li {
+    width: 300px;
+    min-height: 345px;
+}
+
 .list-development h2 {
     color: #000000;
     font-size: 24px;
@@ -333,6 +350,7 @@ body a {
 
 .about-us .company {
     width: 660px;
+    min-height: 400px;
     padding-top: 20px;
 }
 
@@ -356,7 +374,22 @@ body a {
 }
 
 .about-us .company li {
+    position: relative;
+    padding-left: 35px;
     margin-bottom: 24px;
+}
+
+.about-us .company li::before {
+    content: "";
+    position: absolute;
+
+    height: 2px;
+    width: 25px;
+
+    left: 0;
+    top: 50%;
+
+    background-color: #fb565a;
 }
 
 .about-us .company li span {
@@ -365,6 +398,7 @@ body a {
 
 .about-us .statistics {
     width: 360px;
+    min-height: 420px;
 }
 
 .about-us .statistics table {
@@ -553,6 +587,11 @@ body a {
 .catalog {
     display: flex;
     justify-content: space-between;
+}
+
+.filter {
+    width: 265px;
+    min-height: 805px;
 }
 
 .filters {
@@ -754,7 +793,7 @@ body a {
     margin-right: 25px;
 }
 
-.sort-type li:nth-child(1) a {
+.sort-type-item-current a {
     opacity: 1;
 }
 
@@ -768,6 +807,8 @@ body a {
 }
 
 .sorting {
+    width: 759px;
+    min-height: 40px;
     display: flex;
     justify-content: space-between;
 }
@@ -796,7 +837,8 @@ body a {
     justify-content: space-between;
 }
 
-.icon-sort li:nth-child(1):before {
+.icon-sort li:nth-child(1)::before {
+    opacity: 1;
 
     content: "";
     position: absolute;
@@ -812,7 +854,7 @@ body a {
     cursor: pointer;
 }
 
-.icon-sort li:nth-child(2):before {
+.icon-sort li:nth-child(2)::before {
     opacity: 0.2;
 
     content: "";
@@ -829,6 +871,7 @@ body a {
 
     cursor: pointer;
 }
+
 
 .icon-sort li:hover,
 .icon-sort li:focus {
@@ -850,7 +893,7 @@ body a {
     color: #000000;
 }
 
-.pagination-list li:nth-child(1) .button {
+.pagination-item-current .button {
     padding: 13px 17px;
     background-color: #ffffff;
     border: 3px solid #dbdbdb;
