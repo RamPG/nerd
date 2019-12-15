@@ -228,8 +228,22 @@
     </div>
 </main>
 <footer>
+    <section class="map">
+        <img src="img/map.jpg" alt="map" height="416" width="100%">
+        <section class="location">
+            <h3>NERDS DESIGN STUDIO</h3>
+            <p>
+                191186, Санкт-Петербург,<br>
+                ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p>
+                тел. +7 (812) 275-75-75
+            </p>
+            <button type="button" class="button">Напишите нам</button>
+        </section>
+    </section>
     <div class="container">
-        <div class="main-footer">
+        <section class="main-footer">
             <ul class="social-links">
                 <li>
                     <a href="#" class="social-button">
@@ -255,7 +269,7 @@
                     Скидка 10% для друзей из социальных сетей.
                 </p>
             </div>
-        </div>
+        </section>
     </div>
 </footer>
 <section class="modal">
@@ -279,5 +293,15 @@
     <button class="close" type="button"></button>
     <button class="button" type="submit">Отправить</button>
 </section>
+
+<script>
+    var link = document.querySelector(".location .button");
+    var popup = document.querySelector(".modal");
+    link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+
+    })
+</script>
 </body>
 </html>
