@@ -1008,9 +1008,7 @@ img {
 .pagination-list .button {
     padding: 16px 20px;
 }
-.modal-show {
-    display: block;
-}
+
 .modal {
     display: none;
     position: fixed;
@@ -1028,6 +1026,12 @@ img {
     background-repeat: repeat;
     box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
 
+}
+
+.modal-show {
+    display: block;
+
+    animation: bounce 0.6s;
 }
 
 .modal h2 {
@@ -1150,6 +1154,7 @@ img {
     margin-top: 80px;
     margin-bottom: 80px;
 }
+
 .location {
     position: absolute;
 
@@ -1161,6 +1166,7 @@ img {
 
     background-color: #ffffff;
 }
+
 .location h3 {
     padding-left: 50px;
     padding-top: 25px;
@@ -1185,4 +1191,14 @@ img {
     margin-left: 50px;
     padding: 19px 45px;
     background-color: #fb565a;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translate(-300%, -50%);
+    }
+}
+
+.visual-map {
+    height: 416px;
 }

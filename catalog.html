@@ -229,7 +229,7 @@
 </main>
 <footer>
     <section class="map">
-        <img src="img/map.jpg" alt="map" height="416" width="100%">
+        <div id="map" class="visual-map"></div>
         <section class="location">
             <h3>NERDS DESIGN STUDIO</h3>
             <p>
@@ -296,12 +296,57 @@
 
 <script>
     var link = document.querySelector(".location .button");
+
     var popup = document.querySelector(".modal");
+    var close = popup.querySelector(".close");
+
+    var user_name = popup.querySelector("[name=name]");
+
     link.addEventListener("click", function (evt) {
         evt.preventDefault();
         popup.classList.add("modal-show");
-
+        user_name.focus();
     })
+
+    close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+    })
+
+    document.addEventListener("keydown", function (evt) {
+        if (evt.keyCode === 27) {
+            evt.preventDefault();
+            if (popup.classList.contains("modal-show")) {
+                popup.classList.remove("modal-show");
+            }
+        }
+    })
+
+
+</script>
+<script src="//api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+<script>
+    ymaps.ready(init);
+
+    function init() {
+
+        var myMap = new ymaps.Map('map', {
+            center: [59.938631, 30.323055],
+            zoom: 18,
+            controls: ["zoomControl"]
+        });
+        var placemark = new ymaps.Placemark([59.938631, 30.323055], {
+            balloonContent: "123"
+        }, {
+            iconLayout: 'default#image',
+            iconImageHref: "img/map-marker.png",
+            iconImageSize: [231, 190],
+            iconImageOffset: [-50, -190]
+
+        });
+        myMap.behaviors.disable('scrollZoom');
+        myMap.geoObjects.add(placemark);
+    }
 </script>
 </body>
 </html>
